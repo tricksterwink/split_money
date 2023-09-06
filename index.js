@@ -29,6 +29,10 @@ app.get('/add_expense',(req, res) => {
     res.sendFile(path.join(__dirname + '/add_expense.html'))
 })
 
+app.get('/login_page.js', (req, res) => {
+    res.sendFile(path.join(__dirname + '/login_page.js'))
+})
+
 app.listen(port, () => {
   console.log(`Example app listening on port ${port}`)
 })
