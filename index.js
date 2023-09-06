@@ -15,6 +15,12 @@ app.get('/',(req, res) => {
     res.sendFile(path.join(__dirname + '/login_page.html'))
 })
 
+// app.get('/new_split/:name',(req, res) => {
+//     res.sendFile(path.join(__dirname + '/new_split.html'))
+//     const memberName = req.params.name
+//     console.log(memberName)
+// })
+
 app.get('/new_split',(req, res) => {
     res.sendFile(path.join(__dirname + '/new_split.html'))
 })
